@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container{
+            height: 400px;
+             display:flex;
+            border:2px dotted red;
+            
+            align-items: stretch;
+            
+
+        }
+        .box{
+          width: 200px; 
+         
+          border: 2px solid black;
+          font-size: 3em;
+        }
+        #box-2{
+            order:1;
+          flex:1;  
+        }
+        #box-1{
+            order:2;
+        }
+    </style>
+</head>
+<body>
+    <h1>flexible</h1>
+    <div class="container">
+        <div id="box-1" class="box">box-1</div>
+        <div id="box-2"class="box">box-2</div>
+       
+    </div>
+</body>
+</html>
