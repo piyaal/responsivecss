@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container{
+            height: 400px;
+             display:flex;
+            border:2px dotted red;
+            
+            align-items: stretch;
+            
+
+        }
+        .box{
+          width: 200px; 
+         
+          border: 2px solid black;
+          /*font-size: 1.3em;*/
+        }
+        #box-2{
+            order:1;
+          flex:1;  
+        }
+        #box-1{
+            order:2; 
+        }
+    </style>
+</head>
+<body>
+    <h1>flexible</h1>
+    <div class="container">
+        <div id= "box-1" class="box">box-1</div>
+        <div id="box-2"class="box"> <h2>box-2</h2>
+<article class="blog">
+    <h4>BLOG-1</h4>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea explicabo minus aperiam nisi possimus veritatis natus eos, culpa, provident, cupiditate alias. Ea cupiditate fuga ratione laboriosam quasi explicabo illum mollitia.</p>
+</article>
+<article class="blog">
+    <h4>BLOG-2</h4>
+    <p>Praesentium suscipit facilis harum quasi totam voluptatum quaerat? Tenetur expedita ipsum hic iusto iste. Nihil eaque corrupti atque, inventore quae cupiditate dignissimos provident rerum, consequatur iure illum fuga porro eos!</p>
+</article>
+<article class="blog">
+    <h4>BLOG-3</h4>
+    <p>Voluptatibus facere dolore rem aliquam. Voluptate, est! Quo veritatis, sapiente dolorum eum rerum consectetur autem. Atque, laborum. Eveniet, facilis ipsum, autem perspiciatis, animi obcaecati pariatur voluptates incidunt id reiciendis temporibus.</p>
+</article>
+
+        </div>
+       
+    </div>
+</body>
+</html>
